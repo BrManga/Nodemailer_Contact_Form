@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="contact" action="send" method="post">
+            <h3>Get In Touch</h3>
+            <h4>Fill the form below and make your Nodemailer work!!</h4>
+            <fieldset>
+                <input placeholder="Your name" name="name" type="text" tabindex="1">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" name="email" type="email" tabindex="2">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number" name="phone" type="tel" tabindex="3">
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Company" name="company" type="text" tabindex="4">
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your Message Here...." name="message" tabindex="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <h1>{{msg}}</h1>
+        </form>
+    </div>
+</body>
+
+</html>
