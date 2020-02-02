@@ -1,6 +1,6 @@
 ## Send contact information via contact form by using Nodemailer
-![](src/images/contact.png)
-![](src/images/mail.png)
-![](src/images/maildetail.png)
+![](images/contact.png)
+![](images/mail.png)
+![](images/maildetail.png)
 
 
