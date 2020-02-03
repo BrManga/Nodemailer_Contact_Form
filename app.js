@@ -6,6 +6,8 @@ const nodemailer = require("nodemailer");
 const sc = require("./sc");
 const app = express();
 
+const PORT = process.env.PORT || 4000;
+
 app.engine("handlebars", exhbs());
 app.set("view engine", "handlebars");
 app.use("/public", express.static(path.join(__dirname, "public")));
@@ -61,6 +63,6 @@ app.post("/send", (req, res) => {
     })
     .catch(console.error);
 });
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("server connected");
 });
