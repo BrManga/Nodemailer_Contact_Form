@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 const sc = require("./sc");
 const app = express();
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT || 3000;
 
 app.engine("handlebars", exhbs());
 app.set("view engine", "handlebars");
